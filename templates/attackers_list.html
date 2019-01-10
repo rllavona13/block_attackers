@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>Block Attackers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Ramon Rivera Llavona">
+    <meta charset="utf-8">
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ url_for('block_form', filename='ico/favicon.ico') }}">
+
+
+  </head>
+
+  <style>
+
+      h2 {
+        color: black;
+        font-family: arial;
+        font-size: 300%;
+        text-align: center;
+        }
+
+      h3 {
+        color: black;
+        font-family: arial;
+        font-size: 300%;
+        text-align: center;
+        }
+
+      h4 {
+        color: black;
+        font-family: arial;
+        font-size: 300%;
+        text-align: center;
+        }
+
+      footer {
+        color: black;
+        font-family: arial;
+        font-size: 120%;
+        text-align: center;
+        }
+
+      form {
+        text-align: center;
+       }
+
+      input {
+        text-align: center;
+       }
+
+
+
+  </style>
+
+  <body>
+
+            <h2>Add New IP to Attacker-List:</h2>
+                <form action="{{ url_for('block_form') }}" method="POST">
+                  <input type="text" class="form-control" placeholder="Enter IP Address to block IP Address:"
+                         name="attacker">
+                  <input type="submit" name="commit" value="Add IP">
+                </form>
+
+            <h3>Delete IP from Attacker-List:</h3>
+                <form action="{{ url_for('block_form') }}" method="POST">
+                  <input type="text" class="form-control" placeholder="Enter IP Address to remove from Attacker-List:"
+                         name="a_delete">
+                  <input type="submit" name="delete" value="Delete IP">
+                </form>
+
+            <h4>Show Attacker List</h4>
+                <form action="{{ url_for('block_form') }}" method="POST">
+                  <input type="submit" name="show" value="Show Attacker List">
+                </form>
+
+    <br>
+
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+        <footer>By Ramon Rivera Llavona - NEO Data</footer>
+
+  </body>
+
+</html>
