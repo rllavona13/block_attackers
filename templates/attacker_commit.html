@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>Block Attacker IP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Ramon Rivera Llavona">
+    <meta charset="utf-8">
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ url_for('block_form', filename='ico/favicon.ico') }}">
+
+  </head>
+
+  <style>
+
+   h1 {
+     color: black;
+     font-family: verdana;
+     font-size: 300%;
+     text-align: center;
+       }
+
+   p {
+     color: black;
+     font-family: verdana;
+     font-size: 100%;
+       }
+
+   body {
+     text-align: center;
+   }
+
+
+  </style>
+
+
+<body>
+    <h1>IP Address Added to Attacker List</h1>
+    <pre>
+
+    {{ compares }}
+
+    </pre>
+
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+        <button onclick="goBack()">Back To Attacker List Tool</button>
+
+      <script>
+              function goBack() {
+                 window.history.back();
+                                 }
+      </script>
+
+    <p>NOTE: Configuration already applied, if you want to delete the IP address you need to use the Delete Function</p>
+
+     <footer>By Ramon Rivera Llavona - NEO Data</footer>
+</body>
+</html>
