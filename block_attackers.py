@@ -12,7 +12,7 @@ config_file = open('auth.json')
 config = json.load(config_file)
 config_file.close()
 
-show
+
 @app.route('/', methods=['GET', 'POST'])
 def block_form():
 
