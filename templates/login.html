@@ -1,0 +1,60 @@
+<link rel="stylesheet" href="/static/style.css" type="text/css">
+
+<head>
+
+      <style>
+
+      h2 {
+        color: black;
+        font-family: arial;
+        font-size: 300%;
+        text-align: center;
+        }
+
+      h3 {
+        color: black;
+        font-family: arial;
+        font-size: 300%;
+        text-align: center;
+        }
+
+
+      form {
+        text-align: center;
+       }
+
+      input {
+        text-align: center;
+       }
+
+  </style>
+
+
+</head>
+
+<form action="/login" method="POST">
+	<div class="login">
+		<div class="login-screen">
+			<div class="app-title">
+				<h1>Block Attackers - Login</h1>
+			</div>
+
+			<div class="login-form">
+				<div class="control-group">
+				<input type="text" class="login-field" value="" placeholder="Radius Username" name="user">
+				<label class="login-field-icon fui-user"></label>
+				</div>
+
+				<div class="control-group">
+				<input type="password" class="login-field" value=""  placeholder="Radius Password" name="password">
+				<label class="login-field-icon fui-lock"></label>
+				</div>
+
+                <input type="submit" value="Log in" name="login" class="btn btn-primary btn-large btn-block" >
+			    <br>
+			</div>
+		</div>
+	</div>
+
+</form>
+
